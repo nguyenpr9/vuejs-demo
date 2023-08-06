@@ -1,0 +1,3 @@
+import axios from "axios";
+import {User} from './UserType'
+export const fetchUser = () => axios.get<User[]>(`${process.env.VUE_APP_BACKEND_URL}/user`)
